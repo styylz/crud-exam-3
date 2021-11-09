@@ -4,6 +4,24 @@ class CarCardComponent {
     this.init();
   }
 
+  static USD_EUR = 1.16;
+
+  currConverted = (curr, amount) => {
+    let convertedPrice;
+    let pricePlaceHolder = "";
+    switch (curr) {
+      case "$":
+        convertedPrice = amount * CarCardComponent.USD_EUR;
+        pricePlaceHolder = `${convertedPrice} € `;
+        break;
+      case "€":
+        return (pricePlaceHolder = `${amount} €`);
+    }
+    return `<div>
+        <span>${pricePlaceHolder}</span>
+    </div>`;
+  };
+
   init = () => {
     const { brand, model, year, fuelTypes, price, imgSrc } = this.props;
 
@@ -17,7 +35,7 @@ class CarCardComponent {
         <li>${model}</li>
         <li>${year}</li>
         <li>${fuelTypes}</li>
-        <li>${price.amount}</li>
+        <li>Price:${this.currConverted(price.currency, price.amount)}</li>
      </ul>
       <img src="${imgSrc}" />
     </div>
