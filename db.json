@@ -1,0 +1,64 @@
+{
+  "Car": [
+    {
+      "id": "100",
+      "brand": "BMW",
+      "model": "X5",
+      "year": "2021",
+      "fuelTypes": "petrol",
+      "price": {
+        "amount": 50000,
+        "currency": "$"
+      },
+      "imgSrc": "https://www.ccarprice.com/products/BMW_X5_xDrive45e_Plug-In_Hybrid_2021_Price.jpg"
+    },
+    {
+      "id": "101",
+      "brand": "Volvo",
+      "model": "XC90",
+      "year": "2021",
+      "fuelTypes": "hybrid",
+      "price": {
+        "amount": 60000,
+        "currency": "€"
+      },
+      "imgSrc": "https://www.ccarprice.com/products/Volvo_XC90_T5_Momentum_2021.jpg"
+    },
+    {
+      "id": "102",
+      "brand": "Audi",
+      "model": "Q5",
+      "year": "2021",
+      "fuelTypes": "dysel",
+      "price": {
+        "amount": 80000,
+        "currency": "€"
+      },
+      "imgSrc": "https://www.ccarprice.com/products/Audi_Q5_Sportback_2021.jpg"
+    },
+    {
+      "id": "103",
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "year": "2020",
+      "fuelTypes": "eletric",
+      "price": {
+        "amount": 70000,
+        "currency": "€"
+      },
+      "imgSrc": "https://www.ccarprice.com/products/Volkswagen-Arteon-SE-2021_1.jpg"
+    },
+    {
+      "id": "104",
+      "brand": "Ferrari",
+      "model": "Assetto",
+      "year": "2022",
+      "fuelTypes": "gas",
+      "price": {
+        "amount": 200000,
+        "currency": "€"
+      },
+      "imgSrc": "https://www.ccarprice.com/products/Ferrari_296_GTB_Assetto_Fiorano_Coupe_2022.jpg"
+    }
+  ]
+}
