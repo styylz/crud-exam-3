@@ -15,6 +15,10 @@ class CarGridComponent {
     this.render();
   };
 
+  deleteCar = (id) => {
+    API.deleteCars(id, this.getCars, this.showError);
+  };
+
   showError = (error) => {
     alert(error);
   };
@@ -36,7 +40,7 @@ class CarGridComponent {
           ({ id, ...carsProps }) =>
             new CarCardComponent({
               ...carsProps,
-              //   onDelete: () => this.deleteCar(id)
+              onDelete: () => this.deleteCar(id),
             })
         )
         .map((x) => x.htmlElement);

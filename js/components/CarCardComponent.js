@@ -23,7 +23,8 @@ class CarCardComponent {
   };
 
   init = () => {
-    const { brand, model, year, fuelTypes, price, imgSrc } = this.props;
+    const { brand, model, year, fuelTypes, price, imgSrc, onDelete } =
+      this.props;
 
     this.htmlElement = document.createElement("div");
     this.htmlElement.className = "card shadow position-relative";
@@ -39,6 +40,11 @@ class CarCardComponent {
      </ul>
       <img src="${imgSrc}" />
     </div>
+    <button class="btn btn-sm btn-danger w-25 del-btn"> X </button>
   </div>`;
+
+    this.htmlElement
+      .querySelector(".del-btn")
+      .addEventListener("click", onDelete);
   };
 }
